@@ -1,0 +1,39 @@
+.container-card {
+    margin-top: 60px;
+    width: 100%;
+  
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      @include NoMarge();
+    }
+    li {
+      margin: 0 35px;
+      width: 594px;
+      height: 747px;
+      background-color: lightgrey;
+      margin-bottom: 60px;
+      position: relative;
+      &:hover .overlay{
+        opacity: 1;
+       
+      }
+      &:hover {
+        opacity: 0.8;
+        background-color: grey;
+      }
+    }
+    .overlay {
+      position: absolute;
+      @include center();
+      font-size: 60px;
+      font-family: "Pathway Gothic One", sans-serif;
+      opacity: 0;
+    }
+  
+    #little {
+      height: 500px;
+    }
+  }
+  

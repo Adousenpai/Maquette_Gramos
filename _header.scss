@@ -1,0 +1,58 @@
+header {
+    width: 100%;
+    @include NoMarge()
+    position: relative;
+    
+    .logo {
+      position: absolute;
+      top: 0%;
+      margin: 30px 0 0 30px;
+      width: 150px;
+      background-attachment: fixed;
+      img{
+        width: 100%;
+      }
+    }
+  
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      @include NoMarge()
+      h1 {
+        font-size: 90px;
+        font-family: 'Anton', sans-serif;
+        @include NoMarge()
+      }
+      h2 {
+        font-size: 72px;
+        font-family: 'Pathway Gothic One', sans-serif;
+        @include NoMarge()
+      }
+    }
+    .nav {
+
+        color:white;
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-size: 24px;
+        width: 350px;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        z-index: 100;
+        ul {
+            margin: 40px 30px 0 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+    }
+  }
+  .nav.scrolled {
+    background-color: black;
+    transition: background-color 200ms linear;
+  }
+  
+  
